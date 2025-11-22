@@ -48,6 +48,7 @@ Route::prefix('admin')->group(function () {
     Route::put('/tanker-services/{id}', [TankerServiceController::class, 'update'])
         ->name('admin.tanker-services.update');
     
+        
     Route::delete('/tanker-services/{id}', [TankerServiceController::class, 'destroy'])
         ->name('admin.tanker-services.destroy');
 });
